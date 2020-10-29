@@ -136,14 +136,14 @@ func DecodeEventRecord(eventType uint32, data []byte) (*EventRecord, error) {
 	}
 
 	/* Impact flag. */
-	if err := read(reader, &event.ImpactFlag); err != nil {
+	 if err := read(reader, &event.ImpactFlag); err != nil {
 		return nil, err
 	}
 
-	/* Impact. */
+	/* Impact. DEPRECATED
 	if err := read(reader, &event.Impact); err != nil {
 		return nil, err
-	}
+	} */
 
 	/* Blocked. */
 	if err := read(reader, &event.Blocked); err != nil {

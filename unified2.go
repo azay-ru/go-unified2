@@ -83,7 +83,7 @@ type EventRecord struct {
 	DportIcode        uint16
 	Protocol          uint8
 	ImpactFlag        uint8
-	Impact            uint8
+//	Impact            uint8	// deprecated
 	Blocked           uint8
 	MplsLabel         uint32
 	VlanId            uint16
